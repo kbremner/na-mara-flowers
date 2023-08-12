@@ -1,0 +1,4 @@
+<h1>{{item.fields.header}}</h1>
+{% for image in item.fields.images %}
+<img width="300" src="{{image.fields.file.url}}" />
+{% endfor %}
