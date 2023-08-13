@@ -1,0 +1,41 @@
+@font-face {
+  font-family: Donau;
+  src: url("/assets/donau.otf") format("opentype");
+}
+
+h1 {
+  font-family: "Donau", serif;
+  text-transform: uppercase;
+}
+
+html {
+  background-color: #d1e4e4;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#hero-container {
+  width: 100%;
+  position: relative;
+  margin-bottom: 90px;
+}
+
+#hero {
+  width: 100%;
+}
+
+#logo {
+  width: 180px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 100%;
+}

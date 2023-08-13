@@ -7,6 +7,5 @@ module.exports = async function () {
     limit: 1,
   });
   console.log("Main page content fetched");
-  const data = result.items[0].fields;
-  return { callouts: data.callouts };
+  return result.items[0].fields;
 };
