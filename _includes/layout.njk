@@ -14,12 +14,16 @@ title: Na Mara Flowers
     <meta property="og:title" content="{{ openGraphDetails.fields.title }}" />
     <meta property="og:description" content="{{ openGraphDetails.fields.description }}" />
     <meta property="og:url" content="https://www.kbremner.com/na-mara-flowers" />
-    <meta property="og:image" content="{{ openGraphDetails.fields.image.fields.file.url}}" />
+    <meta property="og:image" content="https:{{ openGraphDetails.fields.image.fields.file.url}}" />
+    <meta property="og:type" content="website" />
 
     <meta name="twitter:title" content="{{ openGraphDetails.fields.title }}">
     <meta name="twitter:description" content="{{ openGraphDetails.fields.description }}">
-    <meta name="twitter:image" content="{{ openGraphDetails.fields.image.fields.file.url}}">
+    <meta name="twitter:image" content="https:{{ openGraphDetails.fields.image.fields.file.url}}">
     <meta name="twitter:card" content="summary_large_image">
+
+    <!-- TODO: remove once moved to Eilidh's domain -->
+    <meta name="robots" content="noindex,nofollow">
 
     <title>{{ title }}</title>
     <style>{{ css | cssmin | safe }}</style>
