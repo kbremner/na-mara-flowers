@@ -2,3 +2,4 @@
 {% for image in item.fields.images %}
 <img width="300" src="{{image.fields.file.url}}" />
 {% endfor %}
+<p>{{ item.fields.description }}</p>
