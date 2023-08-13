@@ -10,6 +10,17 @@ title: Na Mara Flowers
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta property="og:title" content="{{ openGraphDetails.fields.title }}" />
+    <meta property="og:description" content="{{ openGraphDetails.fields.description }}" />
+    <meta property="og:url" content="https://www.kbremner.com/na-mara-flowers" />
+    <meta property="og:image" content="{{ openGraphDetails.fields.image.fields.file.url}}" />
+
+    <meta name="twitter:title" content="{{ openGraphDetails.fields.title }}">
+    <meta name="twitter:description" content="{{ openGraphDetails.fields.description }}">
+    <meta name="twitter:image" content="{{ openGraphDetails.fields.image.fields.file.url}}">
+    <meta name="twitter:card" content="summary_large_image">
+
     <title>{{ title }}</title>
     <style>{{ css | cssmin | safe }}</style>
   </head>
