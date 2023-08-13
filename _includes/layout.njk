@@ -1,6 +1,9 @@
 ---
 title: Na Mara Flowers
 ---
+{% setAsync "css" %}
+  {% includeAll "*.css" %}
+{% endsetAsync %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -8,7 +11,7 @@ title: Na Mara Flowers
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ title }}</title>
-    <link rel="preconnect" href="https://images.ctfassets.net">
+    <style>{{ css | cssmin | safe }}</style>
   </head>
   <body>
     {{ content | safe }}
